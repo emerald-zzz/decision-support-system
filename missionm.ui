@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>975</width>
+    <height>614</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>421</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QTableWidget {
+        background-color: rgb(19, 51, 76);
+        border: 1px solid rgb(19, 51, 76);
+        color: rgb(246, 246, 233);
+    }
+    
+    QTableWidget::item {
+        padding: 5px;
+        border: 1px solid  rgb(253, 95, 0) ;
+    }
+    
+    QHeaderView::section {
+        background-color:  rgb(253, 95, 0);
+        font-weight: bold;
+        border: 1px solid  rgb(253, 95, 0);
+        color:rgb(0, 87, 146);
+    }
+ QScrollBar:vertical {
+        background: transparent;
+        width: 15px;
+        border-radius: 7px;
+        margin: 20px 0 20px 0;
+    }
+
+    QScrollBar::handle:vertical {
+        background: rgb(19, 51, 76);
+        border-radius: 7px;
+        min-height: 20px;
+    }
+
+    QScrollBar::add-line:vertical {
+        border: none;
+        background: none;
+    }
+
+    QScrollBar::sub-line:vertical {
+        border: none;
+        background: none;
+    }
+
+    QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+        background: none;
+    }
+ QScrollBar:horizontal {
+        background: #e1e1e1;  /* Set your desired background color */
+        height: 15px;
+        margin: 5px 0 5px 0;
+        border-radius: 7px;
+    }
+
+    QScrollBar::handle:horizontal {
+        background:rgb(251, 94, 0);  /* Set your desired handle color */
+        min-width: 20px;
+        border-radius: 7px;
+     
+    }
+
+    QScrollBar::add-line:horizontal,
+    QScrollBar::sub-line:horizontal {
+        border: none;
+        background: none;
+    }
+
+    QScrollBar::add-page:horizontal,
+    QScrollBar::sub-page:horizontal {
+        background: none;
+    }</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 12pt &quot;Tahoma&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Sort by</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button2">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>40</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton { background-color: rgb(253, 95, 0);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(19, 51, 76);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    }
+                                    QPushButton:hover {
+                                        background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }
+</string>
+    </property>
+    <property name="text">
+     <string>state</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons/icons8-update-done-90.png</normaloff>icons/icons8-update-done-90.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button1">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>40</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton { background-color: rgb(253, 95, 0);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(19, 51, 76);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    }
+                                    QPushButton:hover {
+                                        background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }
+</string>
+    </property>
+    <property name="text">
+     <string>date</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons/icons8-date-100.png</normaloff>icons/icons8-date-100.png</iconset>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>390</y>
+      <width>751</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>30</number>
+     </property>
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="styleSheet">
+        <string notr="true">
+
+
+ QFrame{
+               background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(19, 51, 76, 255),    stop:1 rgba(0, 115, 194, 255));
+                border-radius:10%;
+              
+            }
+           QFrame:hover {
+                transform: scale(1.5);
+            }</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="styleSheet">
+        <string notr="true"> QFrame{
+               background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(19, 51, 76, 255),    stop:1 rgba(0, 115, 194, 255));
+                border-radius:10%;
+              
+            }
+           QFrame:hover {
+                transform: scale(1.1);
+            }</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_3">
+       <property name="styleSheet">
+        <string notr="true"> QFrame{
+               background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(19, 51, 76, 255),    stop:1 rgba(0, 115, 194, 255));
+                border-radius:10%;
+             
+            }
+           QFrame:hover {
+                transform: scale(1.1);
+            }</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_4">
+       <property name="styleSheet">
+        <string notr="true"> QFrame{
+               background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(19, 51, 76, 255),    stop:1 rgba(0, 115, 194, 255));
+                border-radius:10%;
+               
+            }
+           </string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>560</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 12pt &quot;Tahoma&quot;;
+ color:rgb(0, 87, 146);</string>
+    </property>
+    <property name="text">
+     <string>Pending Missions</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>560</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 12pt &quot;Tahoma&quot;;
+ color:rgb(0, 87, 146);</string>
+    </property>
+    <property name="text">
+     <string>Ongoing Missions</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>560</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 12pt &quot;Tahoma&quot;;
+ color:rgb(0, 87, 146);</string>
+    </property>
+    <property name="text">
+     <string>Completed Missions</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>560</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 12pt &quot;Tahoma&quot;;
+ color:rgb(0, 87, 146);</string>
+    </property>
+    <property name="text">
+     <string>Done Late Missions</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_5">
+    <property name="geometry">
+     <rect>
+      <x>479</x>
+      <y>89</y>
+      <width>461</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QFrame{
+               background-color: rgb(19, 51, 76);
+                
+               
+            }</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>50</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 600 10pt &quot;Tahoma&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Select a date </string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>50</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dateEdit">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>50</y>
+      <width>110</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>480</y>
+      <width>75</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton { background-color: rgb(253, 95, 0);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(19, 51, 76);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    }
+                                    QPushButton:hover {
+                                        background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons/back-square-svgrepo-com.svg</normaloff>icons/back-square-svgrepo-com.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

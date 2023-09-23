@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>577</width>
+    <height>483</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(246, 246, 233);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="save">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>300</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton { background-color: rgb(253, 95, 0);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(0, 87, 146);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    }
+                                    QPushButton:hover {
+                                        background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }
+</string>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../.designer/backup/icons/icons8-add-30.png</normaloff>../../.designer/backup/icons/icons8-add-30.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>130</y>
+      <width>181</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:10%;
+border: 2px solid  rgb(253, 95, 0);
+padding-left:10px;
+font: 700 9pt &quot;Segoe UI&quot;;
+color: rgb(19, 51, 76);</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="dateEdit">
+       <property name="styleSheet">
+        <string notr="true">    QDateEdit {
+        background-color: rgb(255, 255, 255);
+        border-radius: 10%;
+        border: 2px solid rgb(253, 95, 0);
+        padding-left: 10px;
+        font: 700 9pt &quot;Segoe UI&quot;;
+        color: rgb(19, 51, 76);
+    }
+QDateEdit::drop-down {
+        width: 30px;
+       /* background-color: #E0E0E0;
+        border: 1px solid #CCCCCC;*/
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding: 2px;
+      
+    }
+</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="accelerated">
+        <bool>false</bool>
+       </property>
+       <property name="showGroupSeparator" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="maximumDateTime">
+        <datetime>
+         <hour>23</hour>
+         <minute>59</minute>
+         <second>59</second>
+         <year>9999</year>
+         <month>12</month>
+         <day>8</day>
+        </datetime>
+       </property>
+       <property name="maximumDate">
+        <date>
+         <year>9999</year>
+         <month>12</month>
+         <day>8</day>
+        </date>
+       </property>
+       <property name="currentSection">
+        <enum>QDateTimeEdit::DaySection</enum>
+       </property>
+       <property name="displayFormat">
+        <string>d/M/yyyy</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="dateEdit_2">
+       <property name="styleSheet">
+        <string notr="true">    QDateEdit {
+        background-color: rgb(255, 255, 255);
+        border-radius: 10%;
+        border: 2px solid rgb(253, 95, 0);
+        padding-left: 10px;
+        font: 700 9pt &quot;Segoe UI&quot;;
+        color: rgb(19, 51, 76);
+    }
+QDateEdit::drop-down {
+        width: 30px;
+       /* background-color: #E0E0E0;
+        border: 1px solid #CCCCCC;*/
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding: 2px;
+      
+    }</string>
+       </property>
+       <property name="dateTime">
+        <datetime>
+         <hour>0</hour>
+         <minute>0</minute>
+         <second>0</second>
+         <year>1999</year>
+         <month>12</month>
+         <day>30</day>
+        </datetime>
+       </property>
+       <property name="displayFormat">
+        <string>d/M/yyyy</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border-top-left-radius:10%;
+border-bottom-left-radius:10%;
+border: 2px solid  rgb(253, 95, 0);
+padding-right:10px;
+font: 700 9pt &quot;Segoe UI&quot;;
+color: rgb(19, 51, 76);
+ padding-left: 10px;</string>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>40</y>
+      <width>251</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 900 35pt &quot;Tw Cen MT Condensed Extra Bold&quot;;
+   color:rgb(0, 87, 146);</string>
+    </property>
+    <property name="text">
+     <string>Plan Mission</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>81</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">   font: 700 8pt  Arial Black;
+   color:rgb(0, 87, 146);</string>
+       </property>
+       <property name="text">
+        <string>Descroiption</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="styleSheet">
+        <string notr="true">   font: 700 8pt  Arial Black;
+  color:rgb(0, 87, 146);</string>
+       </property>
+       <property name="text">
+        <string>Start date</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">   font: 700 8pt  Arial Black;
+  color:rgb(0, 87, 146);</string>
+       </property>
+       <property name="text">
+        <string>End date</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="styleSheet">
+        <string notr="true">   font: 700 8pt  Arial Black;
+  color:rgb(0, 87, 146);</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Assigne to&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>270</y>
+      <width>251</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);
+font: 900 7pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>400</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton { background-color: rgb(253, 95, 0);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(0, 87, 146);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    }
+                                    QPushButton:hover {
+                                        background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons/icons8-logout-48.png</normaloff>icons/icons8-logout-48.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>10</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton { background-color: rgb(253, 95, 0);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(0, 87, 146);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    }
+                                    QPushButton:hover {
+                                        background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }</string>
+    </property>
+    <property name="text">
+     <string>Track missions</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,3605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PipeShield</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Frame 1logo.jpg</normaloff>Frame 1logo.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">     QMainWindow::title {background-color: rgb(246, 246, 233);color:rgb(0, 87, 146);}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>1000</width>
+     <height>800</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#centralwidget{
+		background-color:rgb(246, 246, 233);}</string>
+   </property>
+   <widget class="QFrame" name="frame">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-1</y>
+      <width>250</width>
+      <height>800</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#frame{
+	background-color:rgb(19, 51, 76);
+	box-shadow: 0 0 10px 5px rgba(19, 51, 76, 0.5);
+    z-index:8;
+
+
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>211</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1,0,0,0">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {      
+	                        background-color:rgb(253, 95, 0);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(0, 87, 146);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    text-align: left;
+                                    padding-left: 16px;
+                                    }
+                                    QPushButton:hover {
+                                        background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }
+QPushButton:disabled {background-color:qlineargradient(spread:pad, x1:0.843, y1:0.340273, x2:0, y2:0.301682, stop:0.042654 rgba(72, 72, 72, 255), stop:1 rgba(255, 255, 255, 255)) ;
+                                           border:  1px solid gray;
+ }
+</string>
+        </property>
+        <property name="text">
+         <string>   Add
+   Incident</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/icons8-add-to-database-50.png</normaloff>icons/icons8-add-to-database-50.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="styleSheet">
+         <string notr="true">QPushButton { background-color: rgb(253, 95, 0);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(0, 87, 146);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    text-align: left;
+                                    padding-left: 16px;
+                                    }
+                                    QPushButton:hover {
+                                         background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }
+                                    QPushButton:disabled {background-color:qlineargradient(spread:pad, x1:0.843, y1:0.340273, x2:0, y2:0.301682, stop:0.042654 rgba(72, 72, 72, 255), stop:1 rgba(255, 255, 255, 255)) ;
+                                           border:  1px solid gray;
+ }</string>
+        </property>
+        <property name="text">
+         <string>   Predict
+</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/icons8-analysis-64.png</normaloff>icons/icons8-analysis-64.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="styleSheet">
+         <string notr="true">QPushButton { background-color: rgb(253, 95, 0);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(0, 87, 146);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    text-align: left;
+                                    padding-left: 16px;
+                                    }
+                                    QPushButton:hover {
+                                         background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }
+                                    QPushButton:disabled {background-color:qlineargradient(spread:pad, x1:0.843, y1:0.340273, x2:0, y2:0.301682, stop:0.042654 rgba(72, 72, 72, 255), stop:1 rgba(255, 255, 255, 255)) ;
+                                           border:  1px solid gray;
+ }
+</string>
+        </property>
+        <property name="text">
+         <string>   Incidents
+   History </string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/icons8-browsing-history-64.png</normaloff>icons/icons8-browsing-history-64.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="styleSheet">
+         <string notr="true">QPushButton { background-color: rgb(253, 95, 0);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(0, 87, 146);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    text-align: left;
+                                    padding-left: 16px;
+                                    }
+                                    QPushButton:hover {
+                                        background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }
+                                    QPushButton:disabled {background-color:qlineargradient(spread:pad, x1:0.843, y1:0.340273, x2:0, y2:0.301682, stop:0.042654 rgba(72, 72, 72, 255), stop:1 rgba(255, 255, 255, 255)) ;
+                                           border:  1px solid gray;
+ }
+</string>
+        </property>
+        <property name="text">
+         <string>   Geographical
+   Localization</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/icons8-worldwide-location-26.png</normaloff>icons/icons8-worldwide-location-26.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="styleSheet">
+         <string notr="true">QPushButton { background-color: rgb(253, 95, 0);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(0, 87, 146);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    text-align: left;
+                                    padding-left: 16px;
+                                    }
+                                    QPushButton:hover {
+                                        background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }
+                                    QPushButton:disabled {background-color:qlineargradient(spread:pad, x1:0.843, y1:0.340273, x2:0, y2:0.301682, stop:0.042654 rgba(72, 72, 72, 255), stop:1 rgba(255, 255, 255, 255)) ;
+                                           border:  1px solid gray;
+ }
+</string>
+        </property>
+        <property name="text">
+         <string>   Pipelines
+   Data</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label_19">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>10</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:20% ;
+border: 1px solid rgb(19, 51, 76);
+background-color:rgb(246, 246, 233);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton">
+     <property name="geometry">
+      <rect>
+       <x>131</x>
+       <y>10</y>
+       <width>110</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton{border-top-right-radius:20px;
+border-bottom-right-radius:20px;
+background-color: rgb(19, 51, 76);
+padding-right:30%;
+font: 700 8pt  Arial Black;
+color:rgb(0, 87, 146);
+	border-color: rgb(0, 87, 146);
+border: 1px solid rgb(0, 87, 146);
+}
+
+QToolButton:hover{
+    
+	color: rgb(253, 95, 0);
+	border: 1px solid rgb(253, 95, 0);
+   border-bottom-right-radius:0px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="popupMode">
+      <enum>QToolButton::InstantPopup</enum>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::NoArrow</enum>
+     </property>
+    </widget>
+    <zorder>verticalLayoutWidget</zorder>
+    <zorder>toolButton</zorder>
+    <zorder>label_19</zorder>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>0</y>
+      <width>750</width>
+      <height>795</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>750</width>
+      <height>795</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>750</width>
+      <height>795</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(246, 246, 233);
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <property name="styleSheet">
+      <string notr="true">	background-color:rgb(246, 246, 233);</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>178</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Accident Date/Time</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Pipeline Location</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Pipeline Type</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_35">
+         <property name="text">
+          <string>Pipeline/Facility Name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_36">
+         <property name="text">
+          <string>Opertor Name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Liquid Type</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_31">
+         <property name="text">
+          <string>Accident State</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Accident Latitude</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Accident Longitude</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Cause Category</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_32">
+         <property name="text">
+          <string>Cause Subcategory</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Unintentional Release (Barrels)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>Pipeline Shutdown</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>Property Damage Costs</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_33">
+         <property name="text">
+          <string>Liquid Ignition</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_34">
+         <property name="text">
+          <string>Liquid Explosion</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>30</y>
+        <width>366</width>
+        <height>442</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QDateTimeEdit" name="dateTimeEdit">
+         <property name="time">
+          <time>
+           <hour>5</hour>
+           <minute>0</minute>
+           <second>0</second>
+          </time>
+         </property>
+         <property name="maximumTime">
+          <time>
+           <hour>17</hour>
+           <minute>59</minute>
+           <second>59</second>
+          </time>
+         </property>
+         <property name="displayFormat">
+          <string>M/d/yyyy h:mm </string>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+         <property name="currentSectionIndex">
+          <number>0</number>
+         </property>
+         <property name="timeSpec">
+          <enum>Qt::UTC</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_2">
+         <property name="maxVisibleItems">
+          <number>2</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>ONSHORE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OFFHORE</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <property name="maxVisibleItems">
+          <number>4</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>ABOVEGROUND</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>UNDERGROUND</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TANK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TRANSITION AREA</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_8"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_19">
+         <item>
+          <property name="text">
+           <string>ONEOK NGL PIPELINE LP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PORTLAND PIPELINE CORP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PETROLOGISTICS OLEFINS, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENBRIDGE ENERGY, LIMITED PARTNERSHIP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PLAINS PIPELINE, L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KINDER MORGAN LIQUID TERMINALS, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MOBIL CORP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CONOCOPHILLIPS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TARGA RESOURCES OPERATING LP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NUSTAR LOGISTICS, L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>JAYHAWK PIPELINE LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PLAINS MARKETING, L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CCPS TRANSPORTATION, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MAGELLAN AMMONIA PIPELINE, L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SHELL PIPELINE CO., L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KOCH PIPELINE COMPANY, L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KIANTONE PIPELINE CORP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PACIFIC PIPELINE SYSTEM LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TE PRODUCTS PIPELINE COMPANY, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MAGELLAN PIPELINE COMPANY, LP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EXPLORER PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PLANTATION PIPE LINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NUSTAR PIPELINE OPERATING PARTNERSHIP L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LOOP INC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BELLE FOURCHE PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SEMGROUP LP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WEST SHORE PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BUCKEYE PARTNERS, LP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SUNOCO PIPELINE L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LDH ENERGY PIPELINE L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>COLONIAL PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MID - VALLEY PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENBRIDGE PIPELINES (NORTH DAKOTA) LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CHAPARRAL ENERGY, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENTERPRISE PRODUCTS OPERATING LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EXXONMOBIL PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SINCLAIR TRANSPORTATION COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TEPPCO CRUDE PIPELINE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SFPP, LP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENBRIDGE PIPELINES (OZARK) L.L.C.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BP PIPELINE (NORTH AMERICA) INC.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SUNOCO, INC (R&amp;M)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WHITECAP PIPE LINE COMPANY, L.L.C.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PROGRESS ENERGY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KINDER MORGAN PIPELINES (USA) INC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BRIDGER LAKE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CHEVRON PIPE LINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CHEVRON PRODUCTS COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VALERO TERMINALING AND DISTRIBUTION COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MARATHON PIPE LINE LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HOUSTON REFINING LP.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EXXONMOBIL OIL CORP - WEST COAST</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CALNEV PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TESORO - HIGH PLAINS PIPELINE COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KINDER MORGAN CO2 CO. LP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TC OIL PIPELINE OPERATIONS INC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MAGELLAN TERMINALS HOLDINGS, LP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ALYESKA PIPELINE SERVICE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ROCKY MOUNTAIN PIPELINE SYSTEM, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>AMOCO OIL CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CITGO PRODUCTS PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SUNCOR ENERGY (USA) PIPELINE CO.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WEST TEXAS GULF PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DIXIE PIPELINE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OXY USA INC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WHITE CLIFFS PIPELINE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CITGO PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CENEX PIPELINE LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NUSTAR TERMINALS OPERATIONS PARTNERSHIP L. P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LDH ENERGY MONT BELVIEU L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KINDER MORGAN ENERGY PARTNERS, L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CENTURION PIPELINE L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HARBOR PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENTERPRISE CRUDE PIPELINE LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BP WEST COAST PRODUCTS L.L.C.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>UNOCAL PIPELINE CO - EASTERN REGION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>COFFEYVILLE RESOURCES CRUDE TRANSPORTATION, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ROADRUNNER PIPELINE, L.L.C.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DENBURY ONSHORE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OILTANKING, HOUSTON LP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MID-CONTINENT FRACTIONATION AND STORAGE, L.L.C.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MUSTANG PIPE LINE PARTNERS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BUCKEYE DEVELOPMENT &amp; LOGISTICS, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EXXONMOBIL PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BUCKEYE GULF COAST PIPELINE LP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PIPELINES OF PUERTO RICO INCD, THE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DCP MIDSTREAM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EQUISTAR CHEMICALS, L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TRANSPETCO TRANSPORT CO.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DENBURY GREEN PIPELINE-TEXAS, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FRONT RANGE PIPELINE, LLC.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DENBURY GULF COAST PIPELINES, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BP USFO/LOGISTICS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MARTIN OPERATING PARTNERSHIP, L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CHEVRON PETROCHEMICAL PIPELINE LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KINDER MORGAN COCHIN LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PARAMOUNT PETROLEUM CORP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HOLLY ENERGY PARTNERS - OPERATING, L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WOLVERINE PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CRIMSON PIPELINE L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MOBIL CHEMICAL CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SEADRIFT PIPELINE CORP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CENTRAL FLORIDA PIPELINE CORP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KERN OIL &amp; REFINING CO.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MOBIL PACIFIC PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VALERO REFINING COMPANY - CALIFORNIA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TIDELANDS OIL PRODUCTION COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OLYMPIC PIPE LINE COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CHEVRON MIDSTREAM PIPELINES LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MOTIVA ENTERPRISE LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OILTANKING PORT NECHES, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TRANSMONTAIGNE OPERATING COMPANY L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ST. JAMES OIL CORPORATION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TOTAL PETROCHEMICALS PIPELINE USA , INC.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENBRIDGE STORAGE (PATOKA) L.L.C.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LION OIL TRADING &amp; TRANSPORTATION, INC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KINDER MORGAN WINK PIPELINE LP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PETROLEUM FUEL AND TERMINAL COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HARVEST PIPELINE COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DIXIE PIPELINE COMPANY LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BP PIPELINES (ALASKA), INC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CITGO PETROLEUM CORPORATION (TERMINALS)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BRIDGER PIPELINE LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PHILLIPS 66 PIPELINE LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENERGY TRANSFER COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ROSE ROCK MIDSTREAM L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BP OIL PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>THE DOW CHEMICAL COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ONEOK NGL PIPELINE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DELEK PIPELINE TEXAS, INC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TAMPA BAY PIPELINE CO.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WEST COAST TERMINAL PIPELINE  (WCTP)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENERGY XXI PIPELINE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KEY PIPELINE LIMITED</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BKEP CRUDE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MOBIL  PIPE  LINE COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EXXONMOBIL REFINING AND SUPPLY COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENBRIDGE ENERGY MARKETING LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DELEK LOGISTICS OPERATING, LLC.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>GENESIS PIPELINE USA, L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENBRIDGE PIPELINES (TOLEDO) INC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>COLLINS PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CYPRESS INTERSTATE PIPELINE LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MCCAIN PIPELINE COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CITGO PETROLEUM CORPORATION (REFINERY)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LOOP LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HARVEST-MARKS PIPELINE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DOUBLE EAGLE PIPELINE LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CHEVRON U.S.A. INC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TESORO HIGH PLAINS PIPELINE COMPANY LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TESORO LOGISTICS OPERATIONS LLC - SOUTHERN CALIFORNIA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MARKWEST LIBERTY MIDSTREAM &amp; RESOURCES, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HFOTCO LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MARKWEST MICHIGAN PIPELINE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EXXONMOBIL OIL CORPORATION-TERMINALS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>GENESIS FREE STATE PIPELINE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>THUNDER BASIN PIPELINE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NAVAJO NATION OIL AND GAS COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WESTERN REFINING SOUTHWEST, INC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EXPRESS HOLDINGS (USA), LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NATIONAL COOP REFINERY ASSCO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BKEP PIPELINE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TARGA RESOURCES OPERATING LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CHEVRON PRODUCTS COMPANY - HAWAII</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WESTERN REFINING PIPELINE COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PACIFIC COAST ENERGY COMPANY, LP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>GLASS MOUNTAIN PIPELINE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TRI-STATES NGL PIPELINE LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CALUMET MONTANA REFINING, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NORTH DAKOTA PIPELINE COMPANY LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>JP ENERGY MARKETING, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HILAND CRUDE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KINDER MORGAN CRUDE AND CONDENSATE LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BUTTE PIPELINE CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WYOMING PIPELINE COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LACLEDE GAS CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SKEISUI SPECIALTY CHEMICALS AMERICA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>GEL OFFSHORE PIPELINE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CHEMOIL TERMINALS CORP.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>GENESIS PIPELINE TEXAS, L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FREEPORT-MCMORAN OIL &amp; GAS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TESORO SOCAL PIPELINE COMPANY LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WILLIAMS FIELD SERVICES</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TALLGRASS PONY EXPRESS PIPELINE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FIELDWOOD ENERGY, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DAKOTA GASIFICATION COMPANY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENBRIDGE STORAGE (CUSHING) L.L.C.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BLUE RACER MIDSTREAM, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WESTERN REFINING PIPELINE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PHILLIPS 66 COMPANY - SWEENY REFINERY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CRIMSON GULF, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ASIG - HONOLULU</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>INLAND CORPORATION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DOUBLE H</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VALERO REFINING-TEXAS L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>COUNTRYMARK REFINING AND LOGISTICS, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ULTRAMAR INC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TESORO LOGISTICS OPERATIONS LLC - MOUNTAIN REGION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENBRIDGE PIPELINES (EAST TEXAS) L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENBRIDGE PIPELINES (SOUTHERN LIGHTS) L.L.C.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ROSE ROCK MIDSTREAM L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>RIMROCK MIDSTREAM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>GULF STATE PIPELINE CO INC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>USG WHEATLAND PIPELINE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KINDER MORGAN WINK PIPELINE LLC </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MEDALLION OPERATING COMPANY, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VITOL MIDSTREAM, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VALERO PARTNERS OPERATING CO. LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENERGY XXI USA, INC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IMTT-BAYONNE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NUTAAQ PIPELINE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FRONTIER ENERGY SERVICES, L.L.C.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>JP ENERGY PERMIAN, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CONSOLIDATED EDISON CO OF NY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OHIO RIVER VALLEY PIPELINE, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SUMMIT MIDSTREAM PARTNERS, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>REPUBLIC MIDSTREAM, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DOW PIPELINE CO - CAYUSE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENLINK PROCESSING SERVICES, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>THUMS LONG BEACH CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CAMINO REAL GATHERING CO LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KURARAY AMERICA, INC. </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BHP BILLITON PETROLEUM (EAGLE FORD GATHERING) LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DELEK CRUDE LOGISTICS, LLC.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HAWAII INDEPENDENT ENERGY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ITC PIPELINE COMPANY, LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TORRANCE VALLEY PIPELINE COMPANY LLC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NGL CRUDE TERMINALS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TEXSTAR MIDSTREAM LOGISTICS, LP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MAGELLAN CRUDE OIL PIPELINE COMPANY, L.P.</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TESORO LOGISTICS NORTHWEST PIPELINE LLC</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_3">
+         <property name="maxVisibleItems">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>HVL OR OTHER FLAMMABLE OR TOXIC FLUID, GAS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CO2 (CARBON DIOXIDE)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>REFINED AND/OR PETROLEUM PRODUCT (NON-HVL), LIQUID</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CRUDE OIL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BIOFUEL / ALTERNATIVE FUEL(INCLUDING ETHANOL BLENDS)</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_14">
+         <property name="placeholderText">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>KS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ME</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WI</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TX</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ND</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MN</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IN</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NJ</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TN</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MI</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ID</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>GA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NV</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OH</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SD</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>AK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>UT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>AL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>AR</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MD</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PR</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OR</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WV</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HI</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MA</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_2"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_4">
+         <property name="maxVisibleItems">
+          <number>7</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>INCORRECT OPERATION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MATERIAL/WELD/EQUIP FAILURE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CORROSION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EXCAVATION DAMAGE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NATURAL FORCE DAMAGE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OTHER OUTSIDE FORCE DAMAGE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ALL OTHER CAUSES</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_15">
+         <item>
+          <property name="text">
+           <string>PIPELINE/EQUIPMENT OVERPRESSURED</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PUMP OR PUMP-RELATED EQUIPMENT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DEFECTIVE OR LOOSE TUBING/FITTING</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TEMPERATURE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>THIRD PARTY EXCAVATION DAMAGE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MANUFACTURING-RELATED</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENVIRONMENTAL CRACKING-RELATED</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OTHER EQUIPMENT FAILURE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MISCELLANEOUS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CONSTRUCTION, INSTALLATION OR FABRICATION-RELATED</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>INTERNAL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>INCORRECT INSTALLATION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OVERFILL/OVERFLOW OF TANK/VESSEL/SUMP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VEHICLE NOT ENGAGED IN EXCAVATION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>THREADED CONNECTION/COUPLING FAILURE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NON-THREADED CONNECTION FAILURE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FAILURE OF EQUIPMENT BODY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EXTERNAL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>INCORRECT VALVE POSITION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OTHER NATURAL FORCE DAMAGE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MALFUNCTION OF CONTROL/RELIEF EQUIPMENT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OTHER OUTSIDE FORCE DAMAGE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OTHER INCORRECT OPERATION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EARTH MOVEMENT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PREVIOUS DAMAGE DUE TO EXCAVATION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HEAVY RAINS/FLOODS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ELECTRICAL ARCING FROM OTHER EQUIPMENT/FACILITY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LIGHTNING</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OPERATOR/CONTRACTOR EXCAVATION DAMAGE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DAMAGE BY OPERATOR OR OPERATOR'S CONTRACTOR</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FIRE/EXPLOSION AS PRIMARY CAUSE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>UNKNOWN</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>INCORRECT EQUIPMENT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HIGH WINDS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FISHING OR MARITIME ACTIVITY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>INTENTIONAL DAMAGE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MARITIME EQUIPMENT OR VESSEL ADRIFT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PREVIOUS MECHANICAL DAMAGE</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_3"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_5">
+         <property name="maxVisibleItems">
+          <number>2</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>YES</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NO</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_4"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_16">
+         <property name="maxVisibleItems">
+          <number>2</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>YES</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NO</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_17">
+         <property name="maxVisibleItems">
+          <number>2</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>YES</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NO</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="save">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>540</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton { background-color: rgb(253, 95, 0);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(0, 87, 146);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    }
+                                    QPushButton:hover {
+                                        background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }
+</string>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/icons8-add-30.png</normaloff>icons/icons8-add-30.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cancel">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>540</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton { background-color: rgb(253, 95, 0);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(0, 87, 146);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    }
+                                    QPushButton:hover {
+                                        background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }
+</string>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/icons8-clear-26.png</normaloff>icons/icons8-clear-26.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <property name="styleSheet">
+      <string notr="true">	background-color:rgb(246, 246, 233);
+</string>
+     </property>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>79</y>
+        <width>621</width>
+        <height>491</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>0</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 900 11pt  Arial Black;
+color:rgb(0, 87, 146);</string>
+      </property>
+      <property name="text">
+       <string>   Incidents   History </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>241</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:10%;
+border: 2px solid  rgb(253, 95, 0);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>40</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:10%;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../.designer/backup/search.svg</normaloff>../../.designer/backup/search.svg</iconset>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(246, 246, 233);</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>162</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>Accident Date/Time</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>Pipeline Location</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_14">
+         <property name="text">
+          <string>Pipeline Type</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_15">
+         <property name="text">
+          <string>Liquid Type</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_21">
+         <property name="text">
+          <string>Accident State</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string>Accident Latitude</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_17">
+         <property name="text">
+          <string>Accident Longitude</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_18">
+         <property name="text">
+          <string>Cause Category</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_23">
+         <property name="text">
+          <string>Cause Subcategory</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_24">
+         <property name="text">
+          <string>Liquid Ignition</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_25">
+         <property name="text">
+          <string>Liquid Explosion</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>90</y>
+        <width>356</width>
+        <height>302</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QDateTimeEdit" name="dateTimeEdit_2">
+         <property name="dateTime">
+          <datetime>
+           <hour>19</hour>
+           <minute>19</minute>
+           <second>0</second>
+           <year>2023</year>
+           <month>5</month>
+           <day>27</day>
+          </datetime>
+         </property>
+         <property name="date">
+          <date>
+           <year>2023</year>
+           <month>5</month>
+           <day>27</day>
+          </date>
+         </property>
+         <property name="time">
+          <time>
+           <hour>19</hour>
+           <minute>19</minute>
+           <second>0</second>
+          </time>
+         </property>
+         <property name="maximumTime">
+          <time>
+           <hour>16</hour>
+           <minute>59</minute>
+           <second>59</second>
+          </time>
+         </property>
+         <property name="displayFormat">
+          <string>M/d/yyyy h:mm </string>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+         <property name="currentSectionIndex">
+          <number>0</number>
+         </property>
+         <property name="timeSpec">
+          <enum>Qt::UTC</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_6">
+         <property name="maxVisibleItems">
+          <number>2</number>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>ONSHORE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OFFHORE</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_7">
+         <property name="maxVisibleItems">
+          <number>4</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>ABOVEGROUND</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>UNDERGROUND</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TANK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TRANSITION AREA</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_8">
+         <property name="maxVisibleItems">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>HVL OR OTHER FLAMMABLE OR TOXIC FLUID, GAS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CO2 (CARBON DIOXIDE)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>REFINED AND/OR PETROLEUM PRODUCT (NON-HVL), LIQUID</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CRUDE OIL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BIOFUEL / ALTERNATIVE FUEL(INCLUDING ETHANOL BLENDS)</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_10">
+         <property name="placeholderText">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>KS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ME</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WI</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TX</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ND</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MN</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IN</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NJ</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TN</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MI</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ID</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>GA</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NV</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OH</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SD</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>AK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>UT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>AL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>AR</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MD</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PR</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OR</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WV</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HI</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MA</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_6">
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+         <property name="cursorMoveStyle">
+          <enum>Qt::LogicalMoveStyle</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_7"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_9">
+         <property name="maxVisibleItems">
+          <number>7</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>INCORRECT OPERATION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MATERIAL/WELD/EQUIP FAILURE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CORROSION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EXCAVATION DAMAGE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NATURAL FORCE DAMAGE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OTHER OUTSIDE FORCE DAMAGE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ALL OTHER CAUSES</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_11">
+         <item>
+          <property name="text">
+           <string>PIPELINE/EQUIPMENT OVERPRESSURED</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PUMP OR PUMP-RELATED EQUIPMENT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DEFECTIVE OR LOOSE TUBING/FITTING</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TEMPERATURE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>THIRD PARTY EXCAVATION DAMAGE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MANUFACTURING-RELATED</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ENVIRONMENTAL CRACKING-RELATED</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OTHER EQUIPMENT FAILURE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MISCELLANEOUS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CONSTRUCTION, INSTALLATION OR FABRICATION-RELATED</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>INTERNAL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>INCORRECT INSTALLATION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OVERFILL/OVERFLOW OF TANK/VESSEL/SUMP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VEHICLE NOT ENGAGED IN EXCAVATION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>THREADED CONNECTION/COUPLING FAILURE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NON-THREADED CONNECTION FAILURE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FAILURE OF EQUIPMENT BODY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EXTERNAL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>INCORRECT VALVE POSITION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OTHER NATURAL FORCE DAMAGE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MALFUNCTION OF CONTROL/RELIEF EQUIPMENT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OTHER OUTSIDE FORCE DAMAGE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OTHER INCORRECT OPERATION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EARTH MOVEMENT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PREVIOUS DAMAGE DUE TO EXCAVATION</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HEAVY RAINS/FLOODS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ELECTRICAL ARCING FROM OTHER EQUIPMENT/FACILITY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LIGHTNING</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OPERATOR/CONTRACTOR EXCAVATION DAMAGE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DAMAGE BY OPERATOR OR OPERATOR'S CONTRACTOR</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FIRE/EXPLOSION AS PRIMARY CAUSE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>UNKNOWN</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>INCORRECT EQUIPMENT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HIGH WINDS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FISHING OR MARITIME ACTIVITY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>INTENTIONAL DAMAGE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MARITIME EQUIPMENT OR VESSEL ADRIFT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PREVIOUS MECHANICAL DAMAGE</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_12">
+         <item>
+          <property name="text">
+           <string>YES</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NO</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_13">
+         <item>
+          <property name="text">
+           <string>YES</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NO</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pred">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>440</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton { background-color: rgb(253, 95, 0);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(0, 87, 146);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    }
+                                    QPushButton:hover {
+                                        background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }
+</string>
+      </property>
+      <property name="text">
+       <string>Predict</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 12pt &quot;Tahoma&quot;;</string>
+      </property>
+      <property name="text">
+       <string>predicted shatdown : </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>40</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top:1px solid qlineargradient(x1:0, y1:0, x2:1, y2:0, stop: 0 rgb(195,195,195), stop: 1 rgb(240, 240, 240));;
+border-left:1px solid qlineargradient(x1:0, y1:0, x2:1, y2:0, stop: 0 rgb(195,195,195), stop: 1 rgb(240, 240, 240));;
+border-right: 5px solid black;
+ border-bottom: 5px solid black;
+border-right-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop: 0 rgb(195,195,195), stop: 1 rgb(240, 240, 240));
+border-bottom-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 rgb(195,195,195), stop: 1 rgb(240, 240, 240));
+
+color: rgb(0, 87, 146);
+
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <property name="styleSheet">
+      <string notr="true">		background-color:rgb(246, 246, 233);
+</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(246, 246, 233);</string>
+     </property>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>300</y>
+        <width>521</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox{      
+	                       background-color:rgb(19, 51, 76);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(0, 87, 146);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    text-align: left;
+                                    padding-left: 16px;
+                                    }</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QRadioButton" name="radioButton">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+color: rgb(0, 87, 146);
+	background-color:rgb(19, 51, 76);
+   font: 800 8pt  Arial Black;
+}
+QRadioButton:hover{
+	color: rgb(253, 95, 0);
+background-color:rgb(19, 51, 76);
+}</string>
+       </property>
+       <property name="text">
+        <string>Accident State</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_2">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>20</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+color: rgb(0, 87, 146);
+	background-color:rgb(19, 51, 76);
+   font: 800 8pt  Arial Black;
+}
+QRadioButton:hover{
+	color: rgb(253, 95, 0);
+background-color:rgb(19, 51, 76);
+}</string>
+       </property>
+       <property name="text">
+        <string>Pipeline Type</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_3">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>20</y>
+         <width>89</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+color: rgb(0, 87, 146);
+	background-color:rgb(19, 51, 76);
+   font: 800 8pt  Arial Black;
+}
+QRadioButton:hover{
+	color: rgb(253, 95, 0);
+background-color:rgb(19, 51, 76);
+}</string>
+       </property>
+       <property name="text">
+        <string>Liquid Type</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_4">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>20</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+color: rgb(0, 87, 146);
+	background-color:rgb(19, 51, 76);
+   font: 800 8pt  Arial Black;
+}
+QRadioButton:hover{
+	color: rgb(253, 95, 0);
+background-color:rgb(19, 51, 76);
+}</string>
+       </property>
+       <property name="text">
+        <string>Cause Category</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>370</y>
+        <width>451</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top:1px solid qlineargradient(x1:0, y1:0, x2:1, y2:0, stop: 0 rgb(195,195,195), stop: 1 rgb(240, 240, 240));;
+border-left:1px solid qlineargradient(x1:0, y1:0, x2:1, y2:0, stop: 0 rgb(195,195,195), stop: 1 rgb(240, 240, 240));;
+border-right: 5px solid black;
+ border-bottom: 5px solid black;
+border-right-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop: 0 rgb(195,195,195), stop: 1 rgb(240, 240, 240));
+border-bottom-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 rgb(195,195,195), stop: 1 rgb(240, 240, 240));
+
+color: rgb(0, 87, 146);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>10</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 900 15pt &quot;Tw Cen MT Condensed Extra Bold&quot;;
+   color:rgb(0, 87, 146);</string>
+      </property>
+      <property name="text">
+       <string>You are currently working on :</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listWidget">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>50</y>
+        <width>271</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QListWidget {
+        background-color: rgb(19, 51, 76);  /* Set the background color */
+
+    }
+
+    
+    QListWidget::item {
+        background-color: rgb(0, 87, 146);  /* Set padding for each item */
+        padding:3px;
+   		color: rgbrgb(253, 95, 0);
+	    font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+    }
+    
+    QListWidget::item::hover {
+        background-color: rgb(253, 95, 0); 
+        color:rgb(0, 87, 146);  /* Set the background color for selected items */
+    }</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>10</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 900 15pt &quot;Tw Cen MT Condensed Extra Bold&quot;;
+   color:rgb(0, 87, 146);</string>
+      </property>
+      <property name="text">
+       <string>Upcoming Messions</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>50</y>
+        <width>256</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QListWidget {
+        background-color: rgb(19, 51, 76);  /* Set the background color */
+
+    }
+
+    
+    QListWidget::item {
+        background-color: rgb(0, 87, 146);  /* Set padding for each item */
+        padding:3px;
+   		color: rgbrgb(253, 95, 0);
+	    font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+    }
+    
+    QListWidget::item::hover {
+        background-color: rgb(253, 95, 0); 
+        color:rgb(0, 87, 146);  /* Set the background color for selected items */
+    }</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>260</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 900 12pt &quot;Tw Cen MT Condensed Extra Bold&quot;;
+ color:rgb(0, 87, 146);</string>
+      </property>
+      <property name="text">
+       <string>pick a parameter to review current shutdown statistics </string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QTableWidget" name="tableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>311</width>
+        <height>491</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>90</y>
+        <width>231</width>
+        <height>491</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 900 11pt  Arial Black;
+color:rgb(0, 87, 146);</string>
+      </property>
+      <property name="text">
+       <string>Liste Of Pipelines</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>30</y>
+        <width>241</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 900 11pt  Arial Black;
+color:rgb(0, 87, 146);</string>
+      </property>
+      <property name="text">
+       <string>Liste Of Pipelines Operators</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

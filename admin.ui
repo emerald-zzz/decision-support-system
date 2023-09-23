@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>784</width>
+    <height>474</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pipe shield</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../.designer/backup/Frame 1logo.jpg</normaloff>../../.designer/backup/Frame 1logo.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(246, 246, 233);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>80</y>
+      <width>161</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:10%;
+border: 2px solid  rgb(253, 95, 0);
+padding-left:10px;
+font: 700 9pt &quot;Segoe UI&quot;;
+color: rgb(19, 51, 76);</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>add a username </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>icons/icons8-add-user-52.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>icons/icons8-password-52.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>120</y>
+      <width>251</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);
+font: 900 7pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>380</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-left: 1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(140, 140, 140, 255), stop:1 rgba(227, 227, 227, 255));
+ border-top:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(140, 140, 140, 255), stop:1 rgba(227, 227, 227, 255));
+
+border-right: 5px solid black;
+ border-bottom: 5px solid black;
+border-right-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop: 0 rgb(195,195,195), stop: 1 rgb(240, 240, 240));
+border-bottom-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 rgb(195,195,195), stop: 1 rgb(240, 240, 240));</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>330</y>
+       <width>161</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton { background-color: rgb(253, 95, 0);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(0, 87, 146);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    }
+                                    QPushButton:hover {
+                                        background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }</string>
+     </property>
+     <property name="text">
+      <string>save </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>160</y>
+       <width>161</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:10%;
+border: 2px solid  rgb(253, 95, 0);
+padding-left:10px;
+font: 700 9pt &quot;Segoe UI&quot;;
+color: rgb(19, 51, 76);</string>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>add an email </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>100</y>
+       <width>161</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:10%;
+border: 2px solid  rgb(253, 95, 0);
+padding-left:10px;
+font: 700 9pt &quot;Segoe UI&quot;;
+color: rgb(19, 51, 76);</string>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>add a password</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>220</y>
+       <width>161</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton { 
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(0, 87, 146);
+                                    border:  2px solid rgb(253, 95, 0);
+                                    border-radius:10%;
+                                    }
+                                    QPushButton:hover {
+                                        background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }</string>
+     </property>
+     <property name="text">
+      <string>select image </string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../.designer/backup/icons/icons8-image-file-26.png</normaloff>../../.designer/backup/icons/icons8-image-file-26.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>210</y>
+       <width>50</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>icons/icons8-images-folder-52.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>50</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>icons/icons8-email-60.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>270</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:10%;
+border: 2px solid  rgb(253, 95, 0);
+padding-left:10px;
+font: 700 9pt &quot;Segoe UI&quot;;
+color: rgb(0, 87, 146);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>departement head</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>engineer</string>
+      </property>
+     </item>
+    </widget>
+    <zorder>pushButton_2</zorder>
+    <zorder>lineEdit_3</zorder>
+    <zorder>lineEdit_2</zorder>
+    <zorder>label_5</zorder>
+    <zorder>label_7</zorder>
+    <zorder>comboBox</zorder>
+    <zorder>pushButton</zorder>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 900 20pt &quot;Tw Cen MT Condensed Extra Bold&quot;;
+   color:rgb(0, 87, 146);</string>
+    </property>
+    <property name="text">
+     <string>Add User</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>10</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 900 20pt &quot;Tw Cen MT Condensed Extra Bold&quot;;
+   color:rgb(0, 87, 146);</string>
+    </property>
+    <property name="text">
+     <string>Users Table</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>50</y>
+      <width>255</width>
+      <height>280</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-left: 1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(140, 140, 140, 255), stop:1 rgba(227, 227, 227, 255));
+ border-top:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(140, 140, 140, 255), stop:1 rgba(227, 227, 227, 255));
+
+border-right: 5px solid black;
+ border-bottom: 5px solid black;
+border-right-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop: 0 rgb(195,195,195), stop: 1 rgb(240, 240, 240));
+border-bottom-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 rgb(195,195,195), stop: 1 rgb(240, 240, 240));</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>360</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton { background-color: rgb(253, 95, 0);
+                                       font: 900 11pt  Arial Black;
+                                     color:rgb(0, 87, 146);
+                                    border:  1px solid rgb(237, 131, 0);
+                                    border-radius:10%;
+                                    }
+                                    QPushButton:hover {
+                                        background-color:qlineargradient(spread:repeat, x1:0, y1:1, x2:1, y2:0, stop:0.28436 rgba(253, 95, 0, 255), stop:0.890995 rgba(255, 193, 35, 255));
+                                        border:  1px solid gray;
+                                        box-shadow: 5px 10px rgb(255, 175, 15);
+                                   }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons/icons8-logout-48.png</normaloff>icons/icons8-logout-48.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <zorder>frame</zorder>
+   <zorder>lineEdit</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_6</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>pushButton_3</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
